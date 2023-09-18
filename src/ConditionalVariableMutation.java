@@ -21,5 +21,21 @@ public class ConditionalVariableMutation {
 System.out.println("Addj meg egy számot 0 és 100 között:");
         int c=szam.nextInt();
         boolean isBOnus=false;
+        if(c>=50 && isBOnus==false){
+            System.out.println(c-2);
+        } else if (c<=50 && isBOnus==false) {
+            System.out.println(c-1);
+        }
+        System.out.println("Addj meg egy számot 0 és 50 között:");
+        int d=szam.nextInt();
+        System.out.println("Addj meg egy számot 0 és 500 között:");
+        int idő=szam.nextInt();
+        if(d%4==0&& idő>200){
+            System.out.println("Time out");
+        } else if (d%4==0 && idő<200) {
+            System.out.println("Check");
+        }else {
+            System.out.println("Run Forest Run");
+        }
     }
 }
